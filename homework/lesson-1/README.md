@@ -17,7 +17,7 @@ Your homework for Lesson 1 is a follows:
 - Z
 
 <details>
-    <summary><u>nested</u> <b>stuff</b> (<i>click to expand</i>)</summary>
+    <summary><u>Answer</u>(<i>click to expand</i>)</summary>
     <!-- have to be followed by an empty line! -->
 
 A bit more than normal indentation is necessary to get the nesting correct,
