@@ -52,3 +52,5 @@ Your homework for Lesson 1 is a follows:
       9. Display the result of the chat completion
       10. Repeat
   </details>
+
+[🔼 Home ](/README.md) | [Next Homework 2 ▶](/homework/lesson-2/README.md)
