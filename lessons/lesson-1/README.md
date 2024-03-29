@@ -19,9 +19,16 @@ It allows you to do cool things like call a Weather API to get the current weath
 
 2. Next, let's add the Semantic Kernel Package to the project.
 
-3. Come up with some way to store and read the Model Name, AI Key and AI Endpoint.  I use System.Configuration and App.Config for Console Apps, just because these are for learning purposes.
+    <details>
+    <summary><u>Packages</u> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
 
-4. Implement logic that does the following:
+        Microsoft.SemanticKernel 1.6.3 or better
+  </details>
+
+4. Come up with some way to store and read the Model Name, AI Key and AI Endpoint.  I use System.Configuration and App.Config for Console Apps, just because these are for learning purposes.
+
+5. Implement logic that does the following:
 
     <details>
     <summary><u>Details</u> (<i>click to expand</i>)</summary>
