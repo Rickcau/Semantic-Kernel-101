@@ -70,3 +70,5 @@ The idea is that you are to use the knowledge shared with you in lesson 1 to bui
             else break;
         }
    ~~~
+
+You will find all the Lessons included as projects in the Semantic-Kernel-101.sln.  It's recommended that you clone this repo locally as this will give you access to the master solution and projects if you need them.
