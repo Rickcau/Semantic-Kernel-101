@@ -45,3 +45,5 @@ It allows you to do cool things like call a Weather API to get the current weath
         9. Display the result of the chat completion
         10. Repeat
   </details>
+
+## [Finish your homework before the next lession](./homework/lesson-1/README.md)
