@@ -5,7 +5,7 @@
 - What is required to build a basic Chat Bot with Semantic Kernel?
   
 ## Why is this important?
-It's important to understand why and SDK is needed 
+It's important to understand why a framework is needed for AI based solutions and what are the fundemental building blocks needed for a basic Semantic Kernel Chat Bot.  Once you understand this basics, you are start to leverage the more complex features.
 
 ## Module 1 - Why Semantic Kernel? 
 Today's AI models can easily generate messages and images for users. While this is helpful when building a simple chat app, it is not enough to build fully automated AI agents that can automate business processes and empower users to achieve more. To do so, you would need a framework that can take the responses from these models and use them to call existing code to actually do something productive.
