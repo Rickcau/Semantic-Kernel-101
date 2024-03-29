@@ -1,4 +1,4 @@
-# Lesson 1 - Why Semantic Kernel and What is needed to build our first App?
+# Lesson 1 - Why Semantic Kernel and building our first App?
 
 ## What will you learn in this lession?
 - Why is an SDK like Semantic Kernel Needed?
