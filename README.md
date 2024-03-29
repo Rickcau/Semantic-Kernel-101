@@ -14,3 +14,8 @@ In this lession we cover the fundimental concepts of Semantic Kernel and what is
 
 ### [Lesson 2 - Prompts and Plugins](./lessons/lesson-2/README.md)
 TBD
+
+## Homework
+[Lesson 1 - Homework](/homework/lesson-1/README.md)
+
+[Lesson 2 - Homework](/homework/lesson-2/README.md)
