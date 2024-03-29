@@ -46,5 +46,5 @@ It allows you to do cool things like call a Weather API to get the current weath
         10. Repeat
   </details>
 
-## [Finish your homework before the next lesson](./homework/lesson-1/README.md)
+## [Finish your homework before the next lesson](/homework/lesson-1/README.md)
 [🔼 Home ](/README.md) | [Next Lesson 2 ▶](/lessons/lesson-2/README.md)
