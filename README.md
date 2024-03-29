@@ -12,5 +12,5 @@
 ### [Lesson 1 - Why Semantic Kernel? - Building our first App?](./lessons/lesson-1/README.md)
 In this lession we cover the fundimental concepts of Semantic Kernel and what is needed to build your first console app.
 
-### [Lesson 2] (/README.md)
+### [Lesson 2](/README.md)
 TBD
