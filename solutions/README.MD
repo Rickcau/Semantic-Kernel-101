@@ -1,5 +1,5 @@
 # Solutions
-In this section you will find solutions for each Lesson.
+In this section you will find solutions for each Lesson.  There is a master Visual Studio Solution which has a project for each lesson.  If you get stuck and cannot write the necesscary code to complete the lesson you can take a look at the project for the lesson.  You will find the master solution by [clicking here].
 
 # Lesson 1 - Solution
 The idea is that you are to use the knowledge shared with you in lesson 1 to build your first basic Semantic Kernel Console App.  Your program.cs file should look something like this:
