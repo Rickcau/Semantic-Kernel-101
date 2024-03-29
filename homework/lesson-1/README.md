@@ -3,6 +3,12 @@ Your homework for Lesson 1 is a follows:
 
 - [Read the overview on Semantic Kernel and understand why a framework is needed](https://learn.microsoft.com/en-us/semantic-kernel/overview/) 
 - In the latest version of Semantic Kernel is there such a thing as skills?
+   <details>
+    <summary><u>Answer</u> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
+
+       No.  Skills have been replaced with Plugins.
+  </details>
 - What are the fundimental steps needed for a Chat implementation using Semantic Kernel?
   <details>
     <summary><u>Answer</u> (<i>click to expand</i>)</summary>
