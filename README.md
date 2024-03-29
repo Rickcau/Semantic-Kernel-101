@@ -9,8 +9,8 @@
 - Provide users with reusable building blocks resulting in ability to deliver solutions faster
 
 ## Lessons
-### [Lesson 1](_blank)
-In this lession we cover the fundimental concepts of Semantic Kernel.
+### [Lesson 1 - Why Semantic Kernel? - Building our first App?](./lessons/lesson-1/README.md)
+In this lession we cover the fundimental concepts of Semantic Kernel and what is needed to build your first console app.
 
 ### [Lesson 2] (_blank)
-In this lession we cover
+TBD
