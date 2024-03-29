@@ -1,7 +1,7 @@
 # Solutions
 In this section you will find solutions for each Lesson.
 
-# Lesson 1 Solution
+# Lesson 1 - Solution
 The idea is that you are to use the knowledge shared with you in lesson 1 to build your first basic Semantic Kernel Console App.  Your program.cs file should look something like this:
 
    ~~~
