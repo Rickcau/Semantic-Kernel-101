@@ -1,0 +1,49 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rickcau.NORTHAMERICA\\OneDrive - Microsoft\\Documents\\GitHub_Repro\\Semantic-Kernel-101\\solutions\\lesson-1\\ConsoleApp-SK-Lesson1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EBBE3086-661E-42D6-A099-60A24FC77266}|ConsoleApp-SK-Lesson1.csproj|c:\\users\\rickcau.northamerica\\onedrive - microsoft\\documents\\github_repro\\semantic-kernel-101\\solutions\\lesson-1\\consoleapp-sk-lesson1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBBE3086-661E-42D6-A099-60A24FC77266}|ConsoleApp-SK-Lesson1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 83,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rickcau.NORTHAMERICA\\OneDrive - Microsoft\\Documents\\GitHub_Repro\\Semantic-Kernel-101\\solutions\\lesson-1\\ConsoleApp-SK-Lesson1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\rickcau.NORTHAMERICA\\OneDrive - Microsoft\\Documents\\GitHub_Repro\\Semantic-Kernel-101\\solutions\\lesson-1\\ConsoleApp-SK-Lesson1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T20:26:03.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
