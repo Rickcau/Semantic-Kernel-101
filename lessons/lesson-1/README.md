@@ -15,7 +15,7 @@ Microsoft has created an SDK that allows you to easily describe your existing co
 It allows you to do cool things like call a Weather API to get the current weather, or perform some fancy features using native code, like querying a database or searching an index.
 
 ## Module 2 - What is needed to build our first App?
-1. Let's start by build a .Net Core Console App in Visual Studio.
+1. Let's start by building a .Net Core Console App in Visual Studio.
 
 2. Next, let's add the Semantic Kernel Package to the project.
 
