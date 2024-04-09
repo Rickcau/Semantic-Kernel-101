@@ -40,10 +40,24 @@ Your homework for Lesson 1 is a follows:
 
 - RAG (Retrieval Augmented Generation) and Generative AI
   The RAG pattern is one of the most important patterns in use today.
-  Retrieval = Retrieve inforamtion from a data source
-  Augment = Inject the retrieved data into the prompt
-  Generation = Allow the LLM to generation responses based on the retrieved data
+     Retrieval  = Retrieve inforamtion from a data source
+     Augment    = Inject the retrieved data into the prompt
+     Generation = Allow the LLM to generation responses based on the retrieved data
 
   - [Read and understand RAG with AI Search](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview)
+ 
+- RAG (Retrieval Augmented Generation) and Generative AI
+   The RAG pattern is one of the most important patterns in use today.
+     Retrieval  = Retrieve inforamtion from a data source
+     Augment    = Inject the retrieved data into the prompt
+     Generation = Allow the LLM to generation responses based on the retrieved data
+  <details>
+    <summary><u>Tips</u> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
+
+      
+     [Read and understand RAG with AI Search](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview)
+          
+  </details>
 
 [🔼 Home ](/README.md) | [Next Homework 2 ▶](/homework/lesson-2/README.md)
