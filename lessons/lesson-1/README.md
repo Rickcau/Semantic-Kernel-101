@@ -7,44 +7,82 @@
 ## Why is this important?
 It's important to understand why a framework is needed for AI based solutions and what are the fundemental building blocks needed for a basic Semantic Kernel Chat Bot.  Once you understand this basics, you are start to leverage the more complex features.
 
-## Module 1 - Why Semantic Kernel? 
-Today's AI models can easily generate messages and images for users. While this is helpful when building a simple chat app, it is not enough to build fully automated AI agents that can automate business processes and empower users to achieve more. To do so, you would need a framework that can take the responses from these models and use them to call existing code to actually do something productive.
+## Why Semantic Kernel? 
+![WhySK](/assets/images/WhySK.png)
 
-Microsoft has created an SDK that allows you to easily describe your existing code to AI models so they can request that they be called. Afterwards, Semantic Kernel does the heavy lifting of translating the model's response into a call to your code.
+## What is needed to build our first App?
 
-It allows you to do cool things like call a Weather API to get the current weather, or perform some fancy features using native code, like querying a database or searching an index.
+### 5 Simple steps are needed
+1. Create a Kernel Builder
 
-## Module 2 - What is needed to build our first App?
-1. Let's start by build a .Net Core Console App in Visual Studio.
+   ~~~
+         var builder = Kernel.CreateBuilder();
+   ~~~
 
-2. Next, let's add the Semantic Kernel Package to the project.
+2. Load you AI Endpoint Details
+
+   ~~~
+        var openAiDeployment = ConfigurationManager.AppSettings.Get("AzureOpenAIModel");
+        var openAiUri = ConfigurationManager.AppSettings.Get("AzureOpenAIEndpoint");
+        var openAiApiKey = ConfigurationManager.AppSettings.Get("AzureOpenAIKey");
+   ~~~
+
+3. Add the Chat Completion Service
+
+   ~~~
+       builder.Services.AddAzureOpenAIChatCompletion(
+            deploymentName: openAiDeployment!,
+            endpoint: openAiUri!,
+            apiKey: openAiApiKey!);
+   ~~~
+
+4. Construct the Kernel, ChatHistory, get instance of the ChatCompletion Service
+
+   ~~~
+        var kernel = builder.Build();
+        ChatHistory history = [];
+        var chatCompletionService = kernel.GetRequiredService<IChatCompletionService>();
+   ~~~
+
+5. Send a prompt or ChatHistory and get a response from LLM
+
+   ~~~
+       var prompt = "Why is the Sky blue?";
+       var result = await chatCompletionService.GetChatMessageContentAsync(prompt);
+       Console.WriteLine(result);
+   ~~~
+
+## Let's build your first .NET Core SK Console App
+
+1. Create a new .NET Core Console App in Visual Studio and name it SK-Lesson-1
+2. Add the Semantic Kernel Package to the project.
+   - Click on **Dependecies->Manage NuGet Packages** and inssue the package below 
 
     <details>
     <summary><u>Packages</u> (<i>click to expand</i>)</summary>
     <!-- have to be followed by an empty line! -->
 
         Microsoft.SemanticKernel 1.6.3 or better
-  </details>
+    </details>
 
-4. Come up with some way to store and read the Model Name, AI Key and AI Endpoint.  I use System.Configuration and App.Config for Console Apps, just because these are for learning purposes.
+3. Come up with some way to store and read the Model Name, AI Key and AI Endpoint.  Here is an example of using the System.Configuration class and an App.Config file.
+   - Create an App.Config file in the root of the project using the following format and replace the values to point to your AI Endpoint
 
-5. Implement logic that does the following:
+   ~~~
+      <?xml version="1.0" encoding="utf-8" ?>
+      <configuration>
+	      <appSettings>
+		      <add key="AzureOpenAIEndpoint" value="AzureOpenAI-Endpoint-URI" />
+	          <add key="AzureOpenAIKey" value="AzureOpenAI KEY" />  
+	          <add key="AzureOpenAIModel" value="AzureOpenAI Model Name" />
+	      </appSettings>
+      </configuration>
+   ~~~
 
-    <details>
-    <summary><u>Details</u> (<i>click to expand</i>)</summary>
-    <!-- have to be followed by an empty line! -->
+   - Add a reference to the System.Configuration assembly to the program.cs file
 
-        1. Create an Azure Open AI Service in Azure, you will need to store the Model Name, Endpoint and API Key for later use
-        2. Create a Kernel Builder so you can construct Kernel instances
-        3. Add the OpenAIChatCompletion service using the details from step 1
-        4. Create an install of the Kernel
-        5. Create a ChatHistory instance to store the Chat History
-        6. Create an instance of the ChatCompletionService
-        7. Read the user input
-        8. Call the Chat Completion Service with the prompt history / user input
-        9. Display the result of the chat completion
-        10. Repeat
-  </details>
+4. Using the steps outlined in the **5 Simple steps** build and test your first app.
+   - If needed you can take a look at the soltion to see a fishined project, but ideally you should put hands on keyboard and work through any issues you come across.
 
 ## [Finish your homework before the next lesson](/homework/lesson-1/README.md)
 [🔼 Home ](/README.md) | [Next Lesson 2 ▶](/lessons/lesson-2/README.md)
