@@ -43,11 +43,8 @@ Your homework for Lesson 1 is a follows:
   Retrieval = Retrieve inforamtion from a data source
   Augment = Inject the retrieved data into the prompt
   Generation = Allow the LLM to generation responses based on the retrieved data
-   <details>
-    <summary><u>Read the following</u> (<i>click to expand</i>)</summary>
-    <!-- have to be followed by an empty line! -->
 
-       [RAG with AI Search](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview)
-  </details>
+  - Read and understand RAG with AI Search
+    [RAG with AI Search](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview)
 
 [🔼 Home ](/README.md) | [Next Homework 2 ▶](/homework/lesson-2/README.md)
