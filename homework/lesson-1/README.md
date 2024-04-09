@@ -13,30 +13,20 @@ Your homework for Lesson 1 is a follows:
   <details>
     <summary><u>Answer</u> (<i>click to expand</i>)</summary>
     <!-- have to be followed by an empty line! -->
-
-      1. Create an Azure Open AI Service in Azure, you will need to store the Model Name, Endpoint and API Key for later use
-      2. Create a Kernel Builder so you can construct Kernel instances
-      3. Add the OpenAIChatCompletion service using the details from step 1
-      4. Create an install of the Kernel
-      5. Create a ChatHistory instance to store the Chat History
-      6. Create an instance of the ChatCompletionService
-      7. Read the user input
-      8. Call the Chat Completion Service with the prompt history / user input
-      9. Display the result of the chat completion
-      10. Repeat
+      1. Create a Kernel Builder so you can construct Kernel instances
+      2. Load the AI Endpoint values so you can access the REST endpoint
+      3. Add the Chat Completion Service with the Endpoint details
+      4. Construct the Kernel, Prompt / Chat History, get an instance to the Completion Service
+      5. Send the Prompt / Chat History and get a response
   </details>
 - Build your first Semantic Kernel Console App.
   <details>
     <summary><u>Tips</u> (<i>click to expand</i>)</summary>
     <!-- have to be followed by an empty line! -->
-
-      1. Install the >=1.4.0 version of the Semantic Kernel .NET Package
-      2. I like to use the System.Configuration package to read the Model Name, Endpoint and API Key from an App.Config file
-      3. Using the details outlined in the fundimental steps try and implement the necesscary code to create a simple chat bot.
-
-      Hint: Kernel.CreateBuilder, builder.Services.AddAzureOpenAIChatCompletion, builder.Build, kernel.GetRequiredService<IChatCompletionService>(), chatCompletionService.GetChatMessageContentAsync, history.AddAssistantMessage      
+      1. Follow the steps outlined in Lesson 1, or take a look at the Lesson 1 Soluition for an example.
+      If you need a shortcut you can take look at the Lesson 1 Project found in the [Semantic-Kernel-101.sln file](/solutions/Semantic-Kernel-101/README.md).
+      
+     Hint: Kernel.CreateBuilder, builder.Services.AddAzureOpenAIChatCompletion, builder.Build, kernel.GetRequiredService<IChatCompletionService>(), chatCompletionService.GetChatMessageContentAsync, history.AddAssistantMessage      
   </details>
-
-If you need a shortcut you can take look at the Lesson 1 Project found in the [Semantic-Kernel-101.sln file](/solutions/Semantic-Kernel-101/README.md).
 
 [🔼 Home ](/README.md) | [Next Homework 2 ▶](/homework/lesson-2/README.md)
