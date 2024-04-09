@@ -37,14 +37,6 @@ Your homework for Lesson 1 is a follows:
       
      **Hint:** Kernel.CreateBuilder, builder.Services.AddAzureOpenAIChatCompletion, builder.Build, kernel.GetRequiredService<IChatCompletionService>(), chatCompletionService.GetChatMessageContentAsync, history.AddAssistantMessage      
   </details>
-
-- RAG (Retrieval Augmented Generation) and Generative AI
-  The RAG pattern is one of the most important patterns in use today.
-     Retrieval  = Retrieve inforamtion from a data source
-     Augment    = Inject the retrieved data into the prompt
-     Generation = Allow the LLM to generation responses based on the retrieved data
-
-  - [Read and understand RAG with AI Search](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview)
  
 - RAG (Retrieval Augmented Generation) and Generative AI
    The RAG pattern is one of the most important patterns in use today.
