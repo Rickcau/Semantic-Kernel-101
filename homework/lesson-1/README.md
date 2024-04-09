@@ -8,6 +8,7 @@ Your homework for Lesson 1 is a follows:
     <summary><u>Answer</u> (<i>click to expand</i>)</summary>
     <!-- have to be followed by an empty line! -->
 
+
        No.  Skills have been replaced with Plugins.
 
        [Click here for details](https://devblogs.microsoft.com/semantic-kernel/road-to-v1-0-for-the-python-semantic-kernel-sdk/)
