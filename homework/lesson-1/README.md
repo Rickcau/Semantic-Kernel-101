@@ -16,7 +16,7 @@ Your homework for Lesson 1 is a follows:
   </details>
 
    <details>
-    <summary><u>Read and understand RAG with AI Search</u> (<i>click to expand</i>)</summary>
+    <summary><u>Answer</u> (<i>click to expand</i>)</summary>
     <!-- have to be followed by an empty line! -->
 
       
