@@ -11,7 +11,7 @@ Your homework for Lesson 1 is a follows:
 
        No.  Skills have been replaced with Plugins.
 
-      [Click here for details](https://devblogs.microsoft.com/semantic-kernel/road-to-v1-0-for-the-python-semantic-kernel-sdk/)
+      [Click here for details](https://devblogs.microsoft.com/semantic-kernel/road-to-v1-0-for-the-python-semantic-kernel-sdk)
   
   </details>
 
