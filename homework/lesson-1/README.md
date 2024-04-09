@@ -35,7 +35,19 @@ Your homework for Lesson 1 is a follows:
       
      If you need a shortcut you can take look at the Lesson 1 Project found in the [Semantic-Kernel-101.sln file](/solutions/Semantic-Kernel-101/README.md).
       
-     Hint: Kernel.CreateBuilder, builder.Services.AddAzureOpenAIChatCompletion, builder.Build, kernel.GetRequiredService<IChatCompletionService>(), chatCompletionService.GetChatMessageContentAsync, history.AddAssistantMessage      
+     **Hint:** Kernel.CreateBuilder, builder.Services.AddAzureOpenAIChatCompletion, builder.Build, kernel.GetRequiredService<IChatCompletionService>(), chatCompletionService.GetChatMessageContentAsync, history.AddAssistantMessage      
+  </details>
+
+- RAG (Retrieval Augmented Generation) and Generative AI
+  The RAG pattern is one of the most important patterns in use today.
+  Retrieval = Retrieve inforamtion from a data source
+  Augment = Inject the retrieved data into the prompt
+  Generation = Allow the LLM to generation responses based on the retrieved data
+   <details>
+    <summary><u>Read the following</u> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
+
+       [RAG with AI Search](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview)
   </details>
 
 [🔼 Home ](/README.md) | [Next Homework 2 ▶](/homework/lesson-2/README.md)
