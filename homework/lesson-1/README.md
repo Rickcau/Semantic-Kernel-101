@@ -55,16 +55,16 @@ Your homework for Lesson 1 is a follows:
           
   </details>
 
-- Promopt Template Language
+- Prompt Template Language
 
   The Semantic Kernel prompt template language is a simple way to define and compose AI functions using plain text. You can use it to create natural language prompts, generate responses, 
   extract information, invoke other prompts or perform any other task that can be expressed with text.
   <details>
-    <summary><u>Read and understand RAG with AI Search</u> (<i>click to expand</i>)</summary>
+    <summary><u>Study the Syntax</u> (<i>click to expand</i>)</summary>
     <!-- have to be followed by an empty line! -->
 
       
-     [RAG with AI Search](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview)
+     [Prompt Template Syntax](https://learn.microsoft.com/en-us/semantic-kernel/prompts/prompt-template-syntax)
           
   </details>
 
