@@ -68,4 +68,16 @@ Your homework for Lesson 1 is a follows:
           
   </details>
 
+  - Creating Functions from Prompts and adding variables
+
+  The Semantic Kernel prompt template language is very powerful, you can create tokens that will automatically be replace with input parameters.  Read and study up on this topic as it will be used in Lesson 2!
+  <details>
+    <summary><u>Study the Syntax</u> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
+
+      
+     [Example of templatizing prompts and using variables](https://learn.microsoft.com/en-us/semantic-kernel/prompts/templatizing-prompts?tabs=Csharp))
+          
+  </details>
+
 [🔼 Home ](/README.md) | [Next Homework 2 ▶](/homework/lesson-2/README.md)
