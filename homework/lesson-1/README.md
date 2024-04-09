@@ -41,7 +41,8 @@ Your homework for Lesson 1 is a follows:
   </details>
  
 - RAG (Retrieval Augmented Generation) and Generative AI
-   The RAG pattern is one of the most important patterns in use today.
+
+  The RAG pattern is one of the most important patterns in use today.
      Retrieval  = Retrieve inforamtion from a data source
      Augment    = Inject the retrieved data into the prompt
      Generation = Allow the LLM to generation responses based on the retrieved data
