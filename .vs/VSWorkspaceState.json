@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\solutions",
-    "\\solutions\\lesson-1"
+    "\\solutions\\Semantic-Kernel-101",
+    "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-1",
+    "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-1\\Helpers",
+    "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-2"
   ],
   "PreviewInSolutionExplorer": false
 }

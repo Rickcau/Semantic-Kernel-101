@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<appSettings>
+		<add key="AzureOpenAIEndpoint" value="AzureOpenAI-Endpoint-URI" />
+		<add key="AzureOpenAIKey" value="AzureOpenAI KEY" />  
+		<add key="AzureOpenAIModel" value="AzureOpenAI Model Name" />
+		<add key="WeatherAPIKey" value="Weather API Key" />
+		<add key="WeatherEndpoint" value="https://api.openweathermap.org/data/2.5/weather?zip=" />
+	</appSettings>
+</configuration>
