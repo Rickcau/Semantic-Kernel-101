@@ -2,41 +2,82 @@
 Your homework for Lesson 1 is a follows:
 
 - [Read the overview on Semantic Kernel and understand why a framework is needed](https://learn.microsoft.com/en-us/semantic-kernel/overview/) 
+
 - In the latest version of Semantic Kernel is there such a thing as skills? Do some research to see if you can figuer out the answer before looking at the answer.
    <details>
     <summary><u>Answer</u> (<i>click to expand</i>)</summary>
     <!-- have to be followed by an empty line! -->
 
-       No.  Skills have been replaced with Plugins.
+      
+     No. [Skills have been replaced with Plugins](https://devblogs.microsoft.com/semantic-kernel/road-to-v1-0-for-the-python-semantic-kernel-sdk)
+          
   </details>
+
 - What are the fundimental steps needed for a Chat implementation using Semantic Kernel?
   <details>
     <summary><u>Answer</u> (<i>click to expand</i>)</summary>
     <!-- have to be followed by an empty line! -->
-
-      1. Create an Azure Open AI Service in Azure, you will need to store the Model Name, Endpoint and API Key for later use
-      2. Create a Kernel Builder so you can construct Kernel instances
-      3. Add the OpenAIChatCompletion service using the details from step 1
-      4. Create an install of the Kernel
-      5. Create a ChatHistory instance to store the Chat History
-      6. Create an instance of the ChatCompletionService
-      7. Read the user input
-      8. Call the Chat Completion Service with the prompt history / user input
-      9. Display the result of the chat completion
-      10. Repeat
+      
+     1. Create a Kernel Builder so you can construct Kernel instances
+   
+     2. Load the AI Endpoint values so you can access the REST endpoint
+   
+     3. Add the Chat Completion Service with the Endpoint details
+   
+     4. Construct the Kernel, Prompt / Chat History, get an instance to the Completion Service
+   
+     5. Send the Prompt / Chat History and get a response
   </details>
+
 - Build your first Semantic Kernel Console App.
   <details>
     <summary><u>Tips</u> (<i>click to expand</i>)</summary>
     <!-- have to be followed by an empty line! -->
+      1. Follow the steps outlined in Lesson 1.
+      
+     If you need a shortcut you can take look at the Lesson 1 Project found in the [Semantic-Kernel-101.sln file](/solutions/Semantic-Kernel-101/README.md).
+      
+     **Hint:** Kernel.CreateBuilder, builder.Services.AddAzureOpenAIChatCompletion, builder.Build, kernel.GetRequiredService<IChatCompletionService>(), chatCompletionService.GetChatMessageContentAsync, history.AddAssistantMessage      
+  </details>
+ 
+- RAG (Retrieval Augmented Generation) and Generative AI
 
-      1. Install the >=1.4.0 version of the Semantic Kernel .NET Package
-      2. I like to use the System.Configuration package to read the Model Name, Endpoint and API Key from an App.Config file
-      3. Using the details outlined in the fundimental steps try and implement the necesscary code to create a simple chat bot.
+  The RAG pattern is one of the most important patterns in use today.
+     Retrieval  = Retrieve inforamtion from a data source
+     Augment    = Inject the retrieved data into the prompt
+     Generation = Allow the LLM to generation responses based on the retrieved data
+  <details>
+    <summary><u>Read and understand RAG with AI Search</u> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
 
-      Hint: Kernel.CreateBuilder, builder.Services.AddAzureOpenAIChatCompletion, builder.Build, kernel.GetRequiredService<IChatCompletionService>(), chatCompletionService.GetChatMessageContentAsync, history.AddAssistantMessage      
+      
+     [RAG with AI Search](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview)
+          
   </details>
 
-If you need a shortcut you can take look at the Lesson 1 Project found in the [Semantic-Kernel-101.sln file](/solutions/Semantic-Kernel-101/README.md).
+- Prompt Template Language
+
+  The Semantic Kernel prompt template language is a simple way to define and compose AI functions using plain text. You can use it to create natural language prompts, generate responses, 
+  extract information, invoke other prompts or perform any other task that can be expressed with text.
+  <details>
+    <summary><u>Study the Syntax</u> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
+
+      
+     [Prompt Template Syntax](https://learn.microsoft.com/en-us/semantic-kernel/prompts/prompt-template-syntax)
+          
+  </details>
+
+- Creating Functions from Prompts and adding variables
+
+  The Semantic Kernel prompt template language is very powerful, you can create tokens that will automatically be replace with input parameters.  Read and study up on this topic as it will be used in Lesson 2!
+  <details>
+    <summary><u>Study the Syntax</u> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
+
+      
+     [Example of templatizing prompts and using variables](https://learn.microsoft.com/en-us/semantic-kernel/prompts/templatizing-prompts?tabs=Csharp))
+          
+  </details>
 
 [🔼 Home ](/README.md) | [Next Homework 2 ▶](/homework/lesson-2/README.md)
