@@ -4,6 +4,16 @@ Your homework for Lesson 2:
 
 - [Read the *Understanding AI Plugins in Semantic Kernel* document](https://learn.microsoft.com/en-us/semantic-kernel/agents/plugins/?tabs=Csharp)
 
+**Important Note about Planners**
+ <details>
+    <summary><u>Details.</u> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
+
+      
+     The StepWise and HandleBar planners are being deprecated.  We are recommending that customer leverage Auto Invoke as opposed to user either of these planners.  The SK team has been working on a new planner that will replace these and it has been proven to be much more efficient.  In most cases we are finding that a planner is simply not needed and using multiple plugins with Auto Invoke often proves to be much more efficient.  If you need more control you can use an *intent* pattern to control flow.
+          
+  </details>
+
 In the latest version of Semantic Kernel is there such a thing as skills? Do some research to see if you can figuer out the answer before looking at the answer.
    <details>
     <summary><u>Answer</u> (<i>click to expand</i>)</summary>
