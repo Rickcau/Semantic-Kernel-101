@@ -4,10 +4,12 @@ using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
 using System.Configuration;
+using SKTraining.Plugins;
+using Console_SK_Planner.Plugins;
 
 
 Console.WriteLine("Our first Console App - Semantic Kernel Chat Bot\n");
-
+var runExercise = 5;
 // 5 Simple steps to use the Kernel!
 
 #region Step 1: Create Kernel Builder
@@ -34,6 +36,16 @@ builder.Services.AddAzureOpenAIChatCompletion(
 
 #region Step 4: Construct Kernel, ChatHistory Get instance of ChatCompletion Service
 // Construct instance of Kernel using Builder Settings
+if (runExercise == 5)
+{ // lets add the plugins
+
+    builder.Plugins.AddFromType<UniswapV3SubgraphPlugin>();
+    builder.Plugins.AddFromType<Example2EchoPlugin>();  
+    builder.Plugins.AddFromType<LightOnPlugin>();
+    builder.Plugins.AddFromType<WeatherPlugin>();
+
+}
+
 var kernel = builder.Build();
 
 ChatHistory history = [];
@@ -42,7 +54,7 @@ var chatCompletionService = kernel.GetRequiredService<IChatCompletionService>();
 
 #endregion
 
-var runExercise = 5;
+
 
 #region Exercise 1 - Inline SK Prompt
 // Using Inline SK Prompts
@@ -139,31 +151,42 @@ if (runExercise == 4)
 #region Exercise 5  Lets get into the plugins
 if (runExercise == 5)
 {
-    var input = "We like mountain biking, fly fishing and mountains. " +
-                "Our travel budget is $12000";
-    var prompt = @$"
-    The following is a conversation with an AI travel 
-    assistant. The assistant is helpful, creative, and 
-    very friendly.
 
-    <message role=""user"">Can you give me some travel 
-    destination suggestions?</message>
+    while (true)
+    {
+        Console.Write(">> ");
+        var userMessage = Console.ReadLine();
+        if (userMessage != "Exit")
+        {
+            // history.AddUserMessage(Console.ReadLine()!);
+            history.AddUserMessage(userMessage!);
 
-    <message role=""assistant"">Of course! Do you have a 
-    budget or any specific activities in mind?</message>
+            OpenAIPromptExecutionSettings openAIPromptExecutionSettings = new()
+            {
+                ToolCallBehavior = ToolCallBehavior.AutoInvokeKernelFunctions
+            };
 
-    <message role=""user"">${input}</message>";
+            try
+            {
+                var result = await chatCompletionService.GetChatMessageContentAsync(
+                    history,
+                    executionSettings: openAIPromptExecutionSettings,
+                    kernel: kernel);
 
-    var vacationRecommendation = kernel.CreateFunctionFromPrompt(prompt);
-    // vacationRecommendation.
-    var myPlugin = kernel.CreatePluginFromFunctions("VacationRecommendation", (IEnumerable<KernelFunction>?)vacationRecommendation);
-    KernelFunctionFactory.CreateFromPrompt
+                Console.WriteLine("<< " + result);
 
-    var vacationContent = kernel.InvokeAsync(myPlugin["VactionRecommendation"], new() { ["input"] = input });
-
-    Console.WriteLine(vacationContent);
-    Console.WriteLine("\nPress enter to end.");
-    Console.ReadLine();
+                if (result.Content != null)
+                {
+                    history.AddAssistantMessage(result.Content);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+        }
+        else break;
+    }
 }
 
 
