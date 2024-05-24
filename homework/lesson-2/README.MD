@@ -14,6 +14,7 @@
           
   </details>
 
+### Knowledge Check
 When using prompts in Semantic Kernel, is it required to use the SK Prompt when calling InvokeAsync()?
    <details>
     <summary><u>Answer</u> (<i>click to expand</i>)</summary>
