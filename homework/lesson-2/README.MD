@@ -24,6 +24,7 @@ When using prompts in Semantic Kernel, is it required to use the SK Prompt when 
             
     </details>
 
+
 If you want your AI solution to invoke custom logic, are you required to leverage a plugin?
     <details>
       <summary><u>Answer</u> (<i>click to expand</i>)</summary>
