@@ -14,30 +14,21 @@ Your homework for Lesson 2:
           
   </details>
 
-In the latest version of Semantic Kernel is there such a thing as skills? Do some research to see if you can figuer out the answer before looking at the answer.
+When using prompts in Semantic Kernel, is it required to use the SK Prompt when calling InvokeAsync()?
    <details>
     <summary><u>Answer</u> (<i>click to expand</i>)</summary>
     <!-- have to be followed by an empty line! -->
-
-      
-     No. [Skills have been replaced with Plugins](https://devblogs.microsoft.com/semantic-kernel/road-to-v1-0-for-the-python-semantic-kernel-sdk)
+ 
+     No. As demonstrated in the code examples, you can use a variety of techniques for prompts i.e. interpolated strings, just a regular string as a prompt, load from file or inline.
           
   </details>
 
-- What are the fundimental steps needed for a Chat implementation using Semantic Kernel?
+If you want your AI solution to invoke custom logic, are you required to leverage a plugin?
   <details>
     <summary><u>Answer</u> (<i>click to expand</i>)</summary>
     <!-- have to be followed by an empty line! -->
-      
-     1. Create a Kernel Builder so you can construct Kernel instances
-   
-     2. Load the AI Endpoint values so you can access the REST endpoint
-   
-     3. Add the Chat Completion Service with the Endpoint details
-   
-     4. Construct the Kernel, Prompt / Chat History, get an instance to the Completion Service
-   
-     5. Send the Prompt / Chat History and get a response
+      Yes.  You need to use native functions for this and this does require that you build a plugin for this.  Take a look at the Plugin Examples in the Lesson-2 solution for examples.   
+     
   </details>
 
 - Build your first Semantic Kernel Console App.
