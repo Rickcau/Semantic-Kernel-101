@@ -14,8 +14,8 @@
   </details>
 
 - Prompt Template Language
-The Semantic Kernel prompt template language is a simple way to define and compose AI functions using plain text. You can use it to create natural language prompts, generate responses, 
-  extract information, invoke other prompts or perform any other task that can be expressed with text.
+
+The Semantic Kernel prompt template language is a simple way to define and compose AI functions using plain text. You can use it to create natural language prompts, generate responses, extract information, invoke other prompts or perform any other task that can be expressed with text.
 
 ### Knowledge Check
 When using prompts in Semantic Kernel, is it required to use the SK Prompt when calling InvokeAsync()?
