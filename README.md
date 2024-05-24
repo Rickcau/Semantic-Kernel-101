@@ -24,5 +24,5 @@ We are building a foundation of Semantic Kernel Concepts that will set you up fo
 
 [Lesson 3 - Homework](/homework/lesson-3/README.md)
 
-## [Solutions](/solutions/README.md)
+## [Solutions](/solutions/README.MD)
 Each lesson will have a separate project in the Semantic-Kernel-101.sln.  If you need to see a working example for the lesson you can find them here.  The idea is that you do the homework, put hands on the keyboard and you create the project that that covers the topics outlined in each lesson.  If you need a little help you can use this solution to get you moving.
