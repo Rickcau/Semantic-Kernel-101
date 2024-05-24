@@ -18,13 +18,9 @@ namespace SKTraining.Plugins
 
     public class WeatherPlugin
     {
-        string WeatherPluginEndpoint = ConfigurationManager.AppSettings.Get("WeatherEndpoint") ?? ""; // https://api.openweathermap.org/data/2.5/weather?zip=
-        string WeatherAPIKey = ConfigurationManager.AppSettings.Get("WeatherAPIKey") ?? ""; // "3f8643931dc30aacc44cee06d2c9b5bd"
+        string WeatherPluginEndpoint = ConfigurationManager.AppSettings.Get("WeatherEndpoint") ?? ""; 
+        string WeatherAPIKey = ConfigurationManager.AppSettings.Get("WeatherAPIKey") ?? ""; 
         const string units = "imperial";
-        // https://api.openweathermap.org/data/2.5/weather?zip=28012,us&appid=3f8643931dc30aacc44cee06d2c9b5bd&units=imperial
-        // by zip code is the most accurate.
-        // api.openweathermap.org/data/2.5/weather?q=Belmont,US-ND&APPID=3f8643931dc30aacc44cee06d2c9b5bd&units=imperial
-        // API Key you will need to aquire an API key from openweathermap.org
 
         private readonly HttpClient _client = new();
 
