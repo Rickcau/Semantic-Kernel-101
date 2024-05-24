@@ -31,38 +31,12 @@ When using prompts in Semantic Kernel, is it required to use the SK Prompt when 
             
   </details>
 
-
 If you want your AI solution to invoke custom logic, are you required to leverage a plugin?
   <details>
       <summary><u>Answer</u> (<i>click to expand</i>)</summary>
       <!-- have to be followed by an empty line! -->
         Yes.  You need to use native functions for this and this does require that you build a plugin for this.  Take a look at the Plugin Examples in the Lesson-2 solution for examples. 
        
-  </details>
-
-Prompt Template Language
-
-  The Semantic Kernel prompt template language is a simple way to define and compose AI functions using plain text. You can use it to create natural language prompts, generate responses, 
-  extract information, invoke other prompts or perform any other task that can be expressed with text.
-  <details>
-    <summary><u>Study the Syntax</u> (<i>click to expand</i>)</summary>
-    <!-- have to be followed by an empty line! -->
-
-      
-     [Prompt Template Syntax](https://learn.microsoft.com/en-us/semantic-kernel/prompts/prompt-template-syntax)
-          
-  </details>
-
-- Creating Functions from Prompts and adding variables
-
-  The Semantic Kernel prompt template language is very powerful, you can create tokens that will automatically be replace with input parameters.  Read and study up on this topic as it will be used in Lesson 2!
-  <details>
-    <summary><u>Study the Syntax</u> (<i>click to expand</i>)</summary>
-    <!-- have to be followed by an empty line! -->
-
-      
-     [Example of templatizing prompts and using variables](https://learn.microsoft.com/en-us/semantic-kernel/prompts/templatizing-prompts?tabs=Csharp))
-          
   </details>
 
 [🔼 Home ](/README.md) | [Next Homework 3 ▶](/homework/lesson-3/README.md)
