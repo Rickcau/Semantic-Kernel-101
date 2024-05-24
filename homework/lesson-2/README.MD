@@ -31,32 +31,6 @@ If you want your AI solution to invoke custom logic, are you required to leverag
      
   </details>
 
-- Build your first Semantic Kernel Console App.
-  <details>
-    <summary><u>Tips</u> (<i>click to expand</i>)</summary>
-    <!-- have to be followed by an empty line! -->
-      1. Follow the steps outlined in Lesson 1.
-      
-     If you need a shortcut you can take look at the Lesson 1 Project found in the [Semantic-Kernel-101.sln file](/solutions/Semantic-Kernel-101/README.md).
-      
-     **Hint:** Kernel.CreateBuilder, builder.Services.AddAzureOpenAIChatCompletion, builder.Build, kernel.GetRequiredService<IChatCompletionService>(), chatCompletionService.GetChatMessageContentAsync, history.AddAssistantMessage      
-  </details>
- 
-- RAG (Retrieval Augmented Generation) and Generative AI
-
-  The RAG pattern is one of the most important patterns in use today.
-     Retrieval  = Retrieve inforamtion from a data source
-     Augment    = Inject the retrieved data into the prompt
-     Generation = Allow the LLM to generation responses based on the retrieved data
-  <details>
-    <summary><u>Read and understand RAG with AI Search</u> (<i>click to expand</i>)</summary>
-    <!-- have to be followed by an empty line! -->
-
-      
-     [RAG with AI Search](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview)
-          
-  </details>
-
 - Prompt Template Language
 
   The Semantic Kernel prompt template language is a simple way to define and compose AI functions using plain text. You can use it to create natural language prompts, generate responses, 
@@ -82,4 +56,4 @@ If you want your AI solution to invoke custom logic, are you required to leverag
           
   </details>
 
-[🔼 Home ](/README.md) | [Next Homework 2 ▶](/homework/lesson-2/README.md)
+[🔼 Home ](/README.md) | [Next Homework 3 ▶](/homework/lesson-3/README.md)
