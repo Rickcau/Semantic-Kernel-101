@@ -73,4 +73,7 @@ The idea is that you are to use the knowledge shared with you in lesson 1 to bui
 
 You will find all the Lessons included as projects in the Semantic-Kernel-101.sln.  It's recommended that you clone this repo locally as this will give you access to the master solution and projects if you need them.
 
+# Lesson 2 - Solution
+In this solution we dive into Plugins and Prompts.  The goal here is to demostrate the various ways to use prompts and plugins and the power of Auto Invoke.  We start out with prompts then work our way into plugins.  Basically, everything is a plugin. I would encourage you to try to build this from scratch using the examples.  If you want make a fast start, you can simple use the [Lesson-2 solution](/solutions/Semantic-Kernel-101/ConsoleApp-SK-Lesson-2). 
+
 [🔼 Home ](/README.md)
