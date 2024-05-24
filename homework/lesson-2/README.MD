@@ -15,7 +15,7 @@
   </details>
 
 ### Knowledge Check
-  When using prompts in Semantic Kernel, is it required to use the SK Prompt when calling InvokeAsync()?
+When using prompts in Semantic Kernel, is it required to use the SK Prompt when calling InvokeAsync()?
      <details>
       <summary><u>Answer</u> (<i>click to expand</i>)</summary>
       <!-- have to be followed by an empty line! -->
@@ -24,7 +24,7 @@
             
     </details>
 
-  If you want your AI solution to invoke custom logic, are you required to leverage a plugin?
+If you want your AI solution to invoke custom logic, are you required to leverage a plugin?
     <details>
       <summary><u>Answer</u> (<i>click to expand</i>)</summary>
       <!-- have to be followed by an empty line! -->
