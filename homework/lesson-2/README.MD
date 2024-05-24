@@ -17,6 +17,10 @@
 
 The Semantic Kernel prompt template language is a simple way to define and compose AI functions using plain text. You can use it to create natural language prompts, generate responses, extract information, invoke other prompts or perform any other task that can be expressed with text.
 
+[Creating Functions from Prompts and adding variables](https://learn.microsoft.com/en-us/semantic-kernel/prompts/templatizing-prompts?tabs=Csharp)
+
+The Semantic Kernel prompt template language is very powerful, you can create tokens that will automatically be replace with input parameters.  
+
 ### Knowledge Check
 When using prompts in Semantic Kernel, is it required to use the SK Prompt when calling InvokeAsync()?
   <details>
