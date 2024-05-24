@@ -15,22 +15,22 @@
   </details>
 
 ### Knowledge Check
-When using prompts in Semantic Kernel, is it required to use the SK Prompt when calling InvokeAsync()?
-   <details>
-    <summary><u>Answer</u> (<i>click to expand</i>)</summary>
-    <!-- have to be followed by an empty line! -->
- 
-     No. As demonstrated in the code examples, you can use a variety of techniques for prompts i.e. interpolated strings, just a regular string as a prompt, load from file or inline.
-          
-  </details>
+  When using prompts in Semantic Kernel, is it required to use the SK Prompt when calling InvokeAsync()?
+     <details>
+      <summary><u>Answer</u> (<i>click to expand</i>)</summary>
+      <!-- have to be followed by an empty line! -->
+   
+       No. As demonstrated in the code examples, you can use a variety of techniques for prompts i.e. interpolated strings, just a regular string as a prompt, load from file or inline.
+            
+    </details>
 
-If you want your AI solution to invoke custom logic, are you required to leverage a plugin?
-  <details>
-    <summary><u>Answer</u> (<i>click to expand</i>)</summary>
-    <!-- have to be followed by an empty line! -->
-      Yes.  You need to use native functions for this and this does require that you build a plugin for this.  Take a look at the Plugin Examples in the Lesson-2 solution for examples.   
-     
-  </details>
+  If you want your AI solution to invoke custom logic, are you required to leverage a plugin?
+    <details>
+      <summary><u>Answer</u> (<i>click to expand</i>)</summary>
+      <!-- have to be followed by an empty line! -->
+        Yes.  You need to use native functions for this and this does require that you build a plugin for this.  Take a look at the Plugin Examples in the Lesson-2 solution for examples. 
+       
+    </details>
 
 Prompt Template Language
 
