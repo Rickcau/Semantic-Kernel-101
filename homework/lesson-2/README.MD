@@ -1,4 +1,4 @@
-##Your homework for Lesson 2:
+## Your homework for Lesson 2:
 
 - [Complete the Create Plugins lesson on learn](https://learn.microsoft.com/en-us/training/modules/create-plugins-semantic-kernel/) 
 
