@@ -1,4 +1,4 @@
-Your homework for Lesson 2:
+##Your homework for Lesson 2:
 
 - [Complete the Create Plugins lesson on learn](https://learn.microsoft.com/en-us/training/modules/create-plugins-semantic-kernel/) 
 
@@ -31,7 +31,7 @@ If you want your AI solution to invoke custom logic, are you required to leverag
      
   </details>
 
-- Prompt Template Language
+Prompt Template Language
 
   The Semantic Kernel prompt template language is a simple way to define and compose AI functions using plain text. You can use it to create natural language prompts, generate responses, 
   extract information, invoke other prompts or perform any other task that can be expressed with text.
