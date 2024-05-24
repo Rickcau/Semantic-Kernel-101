@@ -1,8 +1,8 @@
 ## Your homework for Lesson 2:
 
-- [Complete the Create Plugins lesson on learn](https://learn.microsoft.com/en-us/training/modules/create-plugins-semantic-kernel/) 
+[Complete the Create Plugins lesson on learn](https://learn.microsoft.com/en-us/training/modules/create-plugins-semantic-kernel/) 
 
-- [Read the *Understanding AI Plugins in Semantic Kernel* document](https://learn.microsoft.com/en-us/semantic-kernel/agents/plugins/?tabs=Csharp)
+[Read the *Understanding AI Plugins in Semantic Kernel* document](https://learn.microsoft.com/en-us/semantic-kernel/agents/plugins/?tabs=Csharp)
   
    **Important Note about Planners**
    <details>
