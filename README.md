@@ -10,10 +10,12 @@
 
 ## Lessons
 ### [Lesson 1 - Why Semantic Kernel? - Building our first App?](./lessons/lesson-1/README.md)
-In this lession we cover the fundimental concepts of Semantic Kernel and what is needed to build your first console app.
+In this lesson we cover the fundimental concepts of Semantic Kernel and what is needed to build your first console app.
 
 ### [Lesson 2 - Plugins & Prompts](./lessons/lesson-2/README.md)
-TBD
+In this lesson I reiterate the importance of understanding the ChatCompletion Message structure then we dive right into SK Plugins and how they are the body of your AI solution.  We will drill deeper into SK Prompts and the various ways you can use prompts and how everything is a Plugin and why this is important. 
+
+We are building a foundation of Semantic Kernel Concepts that will set you up for success with your AI engagements.  
 
 ## Homework
 [Lesson 1 - Homework](/homework/lesson-1/README.md)
