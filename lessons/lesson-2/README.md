@@ -11,10 +11,12 @@ Basically, everything is a Plugin!  Plugins are the building blocks of your AI s
 There are multiple ways to work with prompts in Semantic Kernel. In this section we will dive into the various ways you can work with prompts.  The most powerful way is to use the SK Prompt Templating Language, but you can also use Interpolated Strings.  You can inject the Chat Completion Message structure and SK will automatically convert it into the proper Message Array.  You can use inline prompts are load them from file.  When using the SK Template Language you can invoke plugins directly from the prompt.  You can pass arguments into the prompt and you can actually load a prompt as a Plugin and use Auto Invoke to call it as well.
 ![Plugins](/assets/images/SKPrompts-1.png)
 
+### Loading Prompts from File
+If you want make your solution more robust, you can load your prompts from file.  Loading prompts from file allows you to alter or change the prompts without having to redeploy the code base. 
 ![Plugins](/assets/images/SKPrompts-2.png)
 
-### 
-
+### Let's take a look at the folder and file structures when loading from file.
+When loading prompts from file Semantic Kernel requires you to have two files 1) SKPrompt.txt 2) Config.json.  You can take a look at the Lesson-2 solution for details on how to do this.
 ![Plugins](/assets/images/SKPrompts-3.png)
 
 
