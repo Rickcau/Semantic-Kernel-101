@@ -42,7 +42,7 @@ var chatCompletionService = kernel.GetRequiredService<IChatCompletionService>();
 
 #endregion
 
-var runExercise = 4;
+var runExercise = 5;
 
 #region Exercise 1 - Inline SK Prompt
 // Using Inline SK Prompts
@@ -136,7 +136,7 @@ if (runExercise == 4)
 
 #region Example Text Input
 
-#region Exercise 5 
+#region Exercise 5  Lets get into the plugins
 if (runExercise == 5)
 {
     var input = "We like mountain biking, fly fishing and mountains. " +
@@ -155,20 +155,13 @@ if (runExercise == 5)
     <message role=""user"">${input}</message>";
 
     var vacationRecommendation = kernel.CreateFunctionFromPrompt(prompt);
+    // vacationRecommendation.
     var myPlugin = kernel.CreatePluginFromFunctions("VacationRecommendation", (IEnumerable<KernelFunction>?)vacationRecommendation);
-    kernel.ImportPluginFromFunctions("VacationRecommendation", (IEnumerable<KernelFunction>?)vacationRecommendation);
+    KernelFunctionFactory.CreateFromPrompt
 
-    /*
-    
-    I'm planning an anniversary trip with my wife. We like mountain biking, fly fishing, mountains, and beaches. Our 
-    travel budget is $12000
-    
-     */
-    Console.WriteLine("Provide a description of what you like to do.");
-    Console.Write(">> ");
-    input = Console.ReadLine();
-    var result = await kernel.InvokePromptAsync(prompt);
-    Console.WriteLine(result);
+    var vacationContent = kernel.InvokeAsync(myPlugin["VactionRecommendation"], new() { ["input"] = input });
+
+    Console.WriteLine(vacationContent);
     Console.WriteLine("\nPress enter to end.");
     Console.ReadLine();
 }
