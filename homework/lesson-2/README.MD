@@ -3,7 +3,8 @@
 - [Complete the Create Plugins lesson on learn](https://learn.microsoft.com/en-us/training/modules/create-plugins-semantic-kernel/) 
 
 - [Read the *Understanding AI Plugins in Semantic Kernel* document](https://learn.microsoft.com/en-us/semantic-kernel/agents/plugins/?tabs=Csharp)
-  **Important Note about Planners**
+  
+   **Important Note about Planners**
    <details>
       <summary><u>Details.</u> (<i>click to expand</i>)</summary>
       <!-- have to be followed by an empty line! -->
