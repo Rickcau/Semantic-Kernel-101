@@ -17,6 +17,11 @@ In this lesson I reiterate the importance of understanding the ChatCompletion Me
 
 We are building a foundation of Semantic Kernel Concepts that will set you up for success with your AI engagements.  
 
+### [Lesson 3 - Chat with your Data - RAG](./lessons/lesson-3/README.md)
+In this lesson we will look at two options for how to implement a Retrieval Augmentation Generation solution that implement allows us to chat with our documents.  We leverage Azure AI Search for the Vector and Semantic Search capabilities.   You can of course use other systems like CosmosDB for MongoDB vCore.  We will look at using the DataSources extension with the Azure Open AI Completion Endpoint as well as leveraging a custom Semantic Kernel Plugin.  
+
+The most simplistic approach is to use the DataSources Array as you don’t have to write any code for this, you just need to make sure the properties are correctly configured.  Regardless of your approach I would most often still recommend also using an intent recognition pattern to control flow.
+
 ## Homework
 [Lesson 1 - Homework](/homework/lesson-1/README.md)
 
