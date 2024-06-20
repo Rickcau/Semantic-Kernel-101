@@ -14,6 +14,8 @@ Before we get into the prompts it’s important to understand the Chat Completio
 
 ## Supported Data Sources
 Below is a link to the official supported data sources.
+![DataSourcesArray](/assets/images/AzureOpenAI-DataSources.jpg)
+
 [Click here to see a list of the suppored data sources](https://learn.microsoft.com/en-us/azure/ai-services/openai/references/on-your-data?tabs=rest#data-source)
 
 
