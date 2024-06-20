@@ -27,5 +27,8 @@ We are not done yet, now we need to create the execution settings and add the **
 [Click here](/solutions/Semantic-Kernel-101/ConsoleApp-SK-Lesson-2) to be taken to the Lesson-3 Soution to review the code and make your own modifications. You will need to rename the **App.config.bak** file to **App.config** and set the end point details to your AI and AI Search endpoints.
 ![Example output](/assets/images/SK-ChatWithData-OutPut.jpg)
 
+## Do your homework like a good student!
+[Click here for the Lesson 3 Homework](/homework/lesson-3/README.md) 
+
 
 [🔼 Home ](/README.md) | [Back Lesson 2 ▶](/lessons/lesson-2/README.md)
