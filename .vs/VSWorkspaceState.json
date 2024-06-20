@@ -1,11 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
     "\\solutions",
     "\\solutions\\Semantic-Kernel-101",
-    "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-1",
     "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-1\\Helpers",
-    "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-2"
+    "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-3",
+    "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-3\\Plugins"
   ],
+  "SelectedNode": "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-3",
   "PreviewInSolutionExplorer": false
 }
