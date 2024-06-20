@@ -79,8 +79,8 @@ In this solution we dive into Plugins and Prompts.  The goal here is to demostra
 # Lesson 3 - Solution - Chat with your own Data
 In this solution we will dive into leveraging the **Data Sources** extension with Semantic Kernel to allow us to **chat with our own data**. You **do not** need to use a Search Client, you simply set the properties and let the LLM do the work!  It's the simplest approach to implement a solution that allows you to chat with your documents.
 
-[Click here](/solutions/Semantic-Kernel-101/ConsoleApp-SK-Lesson-2)
+[Click here to jumnp to Lesson-3 Solution](/solutions/Semantic-Kernel-101/ConsoleApp-SK-Lesson-2)
 
-If you have a need to create a more robust RAG solution please take a look at my rag-intent repo by [clicking here].
+If you have a need to create a more robust RAG solution please take a look at my rag-intent repo by [clicking here](https://github.com/Rickcau/ai-rag-intent-blazor).
 
 [🔼 Home ](/README.md)
