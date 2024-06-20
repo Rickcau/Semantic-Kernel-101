@@ -1,8 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <configuration>
 	<appSettings>
-		<add key="AzureOpenAIEndpoint" value="AzureOpenAI-Endpoint-URI" />
-		<add key="AzureOpenAIKey" value="AzureOpenAI KEY" />  
-		<add key="AzureOpenAIModel" value="AzureOpenAI Model Name" />
+		<add key="AzureOpenAIEndpoint" value="your API endpoint" />
+		<add key="AzureOpenAIKey" value="your Azure OpenAI Key" />
+		<add key="AzureOpenAIModel" value="your model name" />
+		<add key="AzureSearchEndpoint" value="https://yoursearch-endpoint.search.windows.net" />
+		<add key="AzureSearchApiKey" value="your search API key" />
+		<add key="AzureSearchIndex" value="your search index" />
+		<add key="AzureSearchSemanticConfig" value="your semantic search config name" />
 	</appSettings>
 </configuration>
