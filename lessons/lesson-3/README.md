@@ -19,4 +19,9 @@ Below is a link to the official supported data sources.
 In order to leverage the **Data Sources** extension with **Semantic Kernel** we need to use the **AzureOpenAIChatCompletionWithDataService** Class.  Here is an snippet of code that demostrates this. 
 ![ChatCompletionWithDataService](/assets/images/SK-ChatCompletionWithDataService.jpg)
 
+## Adding the Data Sources Array to the Execution Settings
+We are not done yet, now we need to create the execution settings and add the **data sources** array to it.  Here is an example of that.
+![ChatCompletionWithDataService](/assets/images/SK-AddingDataSourcesToExecutionSettings.jpg)
+
+
 [🔼 Home ](/README.md) | [Back Lesson 2 ▶](/lessons/lesson-2/README.md)
