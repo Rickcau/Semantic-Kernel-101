@@ -9,19 +9,14 @@ Below you will an example that I captured from a GET request that has a properly
 
 ![DataSourcesArray](/assets/images/SK-WithDataSourceRAG.png)
 
-Before we get into the prompts it’s important to understand the Chat Completion API structures, specifically the messages array.  1st – I’d recommend that you take a close look at the [Azure OpenAI REST API reference document](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference).  2nd – I would recommend that you play with the Chat Completion endpoints using Postman.  You can find a Postman Chat Completion Collection in my [AI Fundamentals repo](https://github.com/Rickcau/AI-Fundamentals).
-![ChatCompletions](/assets/images/ChatCompletion.png)
-
 ## Supported Data Sources
 Below is a link to the official supported data sources.
 ![DataSourcesArray](/assets/images/AzureOpenAI-DataSources.jpg)
 
 [Click here to see a list of the suppored data sources](https://learn.microsoft.com/en-us/azure/ai-services/openai/references/on-your-data?tabs=rest#data-source)
 
-
-
-
-Basically, everything is a Plugin!  Plugins are the building blocks of your AI solution.  It allows you to define the tasks the Kernel should complete and allows you to augment the capabilities of the LLM and your solution.  Plugins give you the ability to add native code.  You can use built-in plugins or build your own, you can pass arguments and the functions of your plugins can be auto invoked.
-![Plugins](/assets/images/Plugins.png)
+## AzureOpenAIChatCompletionWithDataService Class - Semantic Kernel
+In order to leverage the **Data Sources** extension with **Semantic Kernel** we need to use the **AzureOpenAIChatCompletionWithDataService** Class.  Here is an snippet of code that demostrates this. 
+![ChatCompletionWithDataService](/assets/images/SK-ChatCompletionWithDataService.jpg)
 
 [🔼 Home ](/README.md) | [Back Lesson 2 ▶](/lessons/lesson-2/README.md)
