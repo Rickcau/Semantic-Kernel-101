@@ -24,7 +24,7 @@ We are not done yet, now we need to create the execution settings and add the **
 ![ChatCompletionWithDataService](/assets/images/SK-AddingDataSourcesToExecutionSettings.jpg)
 
 ## Example of the output you will see from the Lesson 3 Solution.
-Click here to be taken to the Lesson-3 Soution to review the code and make your own modifications. You will need to rename the **App.config.bak** file to **App.config** and set the end point details to your AI and AI Search endpoints.
+[Click here](/solutions/Semantic-Kernel-101/ConsoleApp-SK-Lesson-2) to be taken to the Lesson-3 Soution to review the code and make your own modifications. You will need to rename the **App.config.bak** file to **App.config** and set the end point details to your AI and AI Search endpoints.
 ![Example output](/assets/images/SK-ChatWithData-OutPut.jpg)
 
 
