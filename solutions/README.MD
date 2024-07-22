@@ -1,7 +1,7 @@
 # Solutions
 In this section you will find solutions for each Lesson.  There is a master Visual Studio Solution which has a project for each lesson.  If you get stuck and cannot write the necesscary code to complete the lesson you can take a look at the project for the lesson.  You will find the master solution by [clicking here](/solutions/Semantic-Kernel-101/README.md).
 
-# Lesson 1 - Solution
+# Lesson 1 - Solution - Basic Semantic Kernel Chat Bot
 The idea is that you are to use the knowledge shared with you in lesson 1 to build your first basic Semantic Kernel Console App.  Your program.cs file should look something like this:
 
    ~~~
@@ -73,7 +73,14 @@ The idea is that you are to use the knowledge shared with you in lesson 1 to bui
 
 You will find all the Lessons included as projects in the Semantic-Kernel-101.sln.  It's recommended that you clone this repo locally as this will give you access to the master solution and projects if you need them.
 
-# Lesson 2 - Solution
+# Lesson 2 - Solution - Plugins and Prompts
 In this solution we dive into Plugins and Prompts.  The goal here is to demostrate the various ways to use prompts and plugins and the power of Auto Invoke.  We start out with prompts then work our way into plugins.  Basically, everything is a plugin. I would encourage you to try to build this from scratch using the examples.  If you want make a fast start, you can simple use the [Lesson-2 solution](/solutions/Semantic-Kernel-101/ConsoleApp-SK-Lesson-2). 
+
+# Lesson 3 - Solution - Chat with your own Data
+In this solution we will dive into leveraging the **Data Sources** extension with Semantic Kernel to allow us to **chat with our own data**. You **do not** need to use a Search Client, you simply set the properties and let the LLM do the work!  It's the simplest approach to implement a solution that allows you to chat with your documents.
+
+[Click here to jump to the Lesson 3 Solution](/solutions/Semantic-Kernel-101/ConsoleApp-SK-Lesson-2)
+
+If you have a need to create a more robust RAG solution please take a look at my rag-intent repo by [clicking here](https://github.com/Rickcau/ai-rag-intent-blazor).
 
 [🔼 Home ](/README.md)
