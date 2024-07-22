@@ -1,13 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets",
     "\\solutions",
     "\\solutions\\Semantic-Kernel-101",
-    "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-1\\Helpers",
+    "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-2",
+    "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-2\\Helpers",
     "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-3",
-    "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-3\\Plugins"
+    "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-3\\Helpers",
+    "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-3\\Plugins",
+    "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-3\\Plugins\\Prompts\\SummarizePlugin",
+    "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-3\\Plugins\\Prompts\\SummarizePlugin\\Summarize"
   ],
-  "SelectedNode": "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-3",
+  "SelectedNode": "\\solutions\\Semantic-Kernel-101\\ConsoleApp-SK-Lesson-2\\Helpers\\PromptHelper.cs",
   "PreviewInSolutionExplorer": false
 }
