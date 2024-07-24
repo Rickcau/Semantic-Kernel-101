@@ -6,6 +6,8 @@ using System.Configuration;
 using static System.Net.Mime.MediaTypeNames;
 using System.Runtime.Intrinsics.Arm;
 using System.Collections.Immutable;
+using ConsoleApp_SK_Lesson_3.Models;
+using System.Text.Json;
 
 
 Console.WriteLine("Your first Semantic Kernel Chat with Your Data App \n");
@@ -58,7 +60,12 @@ var azureSearchExtensionConfiguration = new AzureSearchChatExtensionConfiguratio
     SemanticConfiguration = aiSearchSemanticConfig,
     Strictness = 3,
     DocumentCount = 5,
-    VectorizationSource = new OnYourDataDeploymentNameVectorizationSource("rdc-text-embedding")
+    VectorizationSource = new OnYourDataDeploymentNameVectorizationSource("rdc-text-embedding"),
+    FieldMappingOptions = new AzureSearchIndexFieldMappingOptions
+    {
+        FilepathFieldName = "metadata_storage_path",
+        TitleFieldName = "title"
+    }
 };
 
 var  AzureExtensionsOptions = new AzureChatExtensionsOptions()
@@ -67,33 +74,60 @@ var  AzureExtensionsOptions = new AzureChatExtensionsOptions()
 };
 #pragma warning disable SKEXP0010
 var promptExecutionSettings = new OpenAIPromptExecutionSettings { AzureChatExtensionsOptions = AzureExtensionsOptions };
+// just showing you that you can use InvokePromptAsync() for this and still get access to the Citation data
+// var testResponseInvokeAsync = await kernel.InvokePromptAsync("What are my healthcare benefits?  Please respond with a simple list.", new(promptExecutionSettings));
+// "Why do we need a No Retaliation Policy"
+var testResponseInvokeAsync = await kernel.InvokePromptAsync("Why do we need a No Retaliation Policy", new(promptExecutionSettings));
+var testInnnercontent = testResponseInvokeAsync.GetValue<ChatMessageContent>()!.InnerContent as Azure.AI.OpenAI.ChatResponseMessage;
+var test5 = testInnnercontent?.AzureExtensionsContext;
+var i = 0;
+foreach (var citation in testInnnercontent?.AzureExtensionsContext?.Citations ?? [])
+{
+    i++;
+    Console.WriteLine($"[Doc{i}]: {citation.Title}"); 
+}
 
-var test = await kernel.InvokePromptAsync("What are my healthcare benefits?  Please respond with a simple list.", new(promptExecutionSettings));
+
 ChatHistory chat = new();
-chat.AddUserMessage("What are my healthcare benefits?  Please respond with a simple list.");
+// chat.AddUserMessage("What are my healthcare benefits?  Please respond with a simple list.");
+// Why do we need a No Retaliation Policy
+chat.AddSystemMessage("If the requested information is not found in the retreived data, simply reponse with 'I am unable to answer query, please try another query or topic.'");
+chat.AddUserMessage("Why is the sky blue?");
+//chat.AddUserMessage("What is the Northwindws no retaliation policy?");
+//chat.AddUserMessage("Why do we need a No Retaliation Policy");
 var chatMessage = await chatCompletionService.GetChatMessageContentAsync(chat, promptExecutionSettings);
+// For the "Why is the sky blue question?" The AI should response with the following: "{The requested information is not found in the retrieved data. Please try another query or topic.}"
 
-var response = chatMessage.Content!;
-
+// Create an instance of the ChatResponse object 
+// I am testing out different ways to manage the response and citations and how a structured might be returned to a client via API.
+var chatResponse = new ChatResponse
+                    {
+                        Content = chatMessage.Content!,
+                        Citations = new List<Citation>()
+                    };
+i = 0;
 var innercontent = chatMessage.InnerContent as Azure.AI.OpenAI.ChatResponseMessage;
-
-// Now let's extract the Citations from the InnerContent as we are using the Azure ChatExtensionsOptions
 foreach (var citation in innercontent?.AzureExtensionsContext?.Citations ?? [])
 {
-    Console.WriteLine($"Citation: {citation.Title}");
+    i++;
+    Console.WriteLine($"[Doc{i}]: {citation.Title}");
+    chatResponse.Citations.Add(new Citation
+    {
+        Title = $"[doc{i}]: {citation.Title}",
+        Link = citation.Filepath
+    });
 }
-Console.WriteLine("\n\n");
 
-Console.WriteLine(response);
+Console.WriteLine(chatMessage.Content!);
 Console.WriteLine("\nCitations:\n");
-var i = 0;
+i = 0; // reset i
+// Now let's extract the Citations from the InnerContent as we are using the Azure ChatExtensionsOptions and print them out
 foreach (var citation in innercontent?.AzureExtensionsContext?.Citations ?? [])
 {
     i++;
     Console.WriteLine($"[Doc{i}]: {citation.Title}");
 }
 
-//Console.WriteLine($@"ToolResponse: {toolResponse}");
 Console.WriteLine("Press any key to end.");
 
 Console.ReadLine();
