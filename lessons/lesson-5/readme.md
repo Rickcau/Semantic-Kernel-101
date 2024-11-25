@@ -13,5 +13,7 @@ Normalization is the process of converting a word or phrase into a standard or c
 #### Semantic Simalarity Search using Normalized Word or Phrase
 Normalization of words or phrases are often used in combination with a **semantic similarity search**.  The idea is to take a **word** or a **phrase** convert it into a normalized version then use this to retrieve records using some sort of LIKE operation and using those records leverage the LLM to perform a similarity match returning the best match of the records you shared with the LLM.  Very similar to have documents indexed in Azure AI Search and perform a semantic similarity search against those documents.  
 
+[Click here to jump to the Lesson 5 Solution](/solutions/Semantic-Kernel-101/ConsoleApp-SK-Lesson-5)
+
 [🔼 Home ](/README.md) | [Back Lesson 3 ▶](/lessons/lesson-3/README.md)
 
