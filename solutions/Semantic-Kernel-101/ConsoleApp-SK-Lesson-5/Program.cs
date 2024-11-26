@@ -110,23 +110,24 @@ Console.WriteLine("Press enter to run the the Simalarity Search example..\n");
 Console.ReadLine();
 #endregion
 
-#region Example of performing a Simalarity Search for the Normalized word or Phrase 
-Console.WriteLine("Now, we will take one of the Words or Phrases normalize and perform a Semantic Simalarity Search against a few records...");
+#region Example of performing a Simalarity Word Search for the Normalized word or Phrase !!! This is not using embeddings, it's simply performing a search on the normalized word or phrases that are similar to the normalized word or phrase using the LLM.
+Console.WriteLine("Now, we will take one of the Words or Phrases normalize and perform a Simalarity Search against a few records...");
 Console.WriteLine("The idea here is that you would retreive this the list of records from a backend system, SQL, CosmosDB, Postgres etc..");
 Console.WriteLine("In this example we are using a static list of records, in a production solution this set of records would be retreived.");
+Console.WriteLine("Ideally, you would have a Vector Index of the records and perform a search on the normalized word or phrase using embeddings with a semantic simalarity search.\n");
 Console.WriteLine("Then you take the normalized word and find the closest match in the list of records provided..\n");
 Console.WriteLine("## Step 1 Normalize the Word.\n");
 
 var normalizedVersion2 = await aiHelper.GetNormalizedWordOrPhraseAsync(phrasesorwords[5]);
 Console.WriteLine($"Original: {phrasesorwords[5]}, Normalized: {normalizedVersion2}\n");
-Console.WriteLine("## Step 2 Perform Semantic Similarity Search.");
+Console.WriteLine("## Step 2 Perform Similarity Search.");
 Console.WriteLine($"Searching for: {normalizedVersion2} against the records list..\n");
 var result = await aiHelper.Gettop3SemanticMatchesAsync(normalizedVersion2, records);
 var resultsofSearch = $"## Results \n {result}\n";
 Console.WriteLine(resultsofSearch);
 
 
-Console.WriteLine("End of Simalarity Search example. Press any key...\n\n");
+Console.WriteLine("End of Simalarity Word Search example. Press any key...\n\n");
 Console.ReadLine();
 
 
