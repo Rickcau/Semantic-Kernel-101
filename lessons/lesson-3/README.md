@@ -30,5 +30,5 @@ We are not done yet, now we need to create the execution settings and add the **
 ## Do your homework like a good student!
 [Click here for the Lesson 3 Homework](/homework/lesson-3/README.md) 
 
-
-[🔼 Home ](/README.md) | [Back Lesson 2 ▶](/lessons/lesson-2/README.md)
+**Lesson 4 is not completed yet but Lesson 5 is ready!!**
+[🔼 Home ](/README.md) | [Next Lesson 5 ▶](/lessons/lesson-5/README.md)
